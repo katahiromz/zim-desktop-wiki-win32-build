@@ -1,0 +1,32 @@
+diff --git a/setup.py b/setup.py
+index cab911fa..5aba858e 100755
+--- a/setup.py
++++ b/setup.py
+@@ -333,7 +333,26 @@ if py2exe:
+ 				'bundle_files': 3,
+ 				'packages': ['encodings', 'cairo', 'atk', 'pangocairo', 'zim'],
+ 				'dll_excludes': {
+-					'DNSAPI.DLL'
++					'DNSAPI.DLL',
++					'api-ms-win-core-processthreads-l1-1-0.dll',
++					'api-ms-win-core-errorhandling-l1-1-0.dll',
++					'api-ms-win-core-sysinfo-l1-1-0.dll',
++					'api-ms-win-core-string-l1-1-0.dll',
++					'api-ms-win-core-registry-l1-1-0.dll',
++					'api-ms-win-core-errorhandling-l1-1-1.dll',
++					'api-ms-win-core-string-l2-1-0.dll',
++					'api-ms-win-core-profile-l1-1-0.dll',
++					'api-ms-win-core-processthreads-l1-1-2.dll',
++					'api-ms-win-core-libraryloader-l1-2-1.dll',
++					'api-ms-win-core-file-l1-2-1.dll',
++					'api-ms-win-security-base-l1-2-0.dll',
++					'api-ms-win-eventing-provider-l1-1-0.dll',
++					'api-ms-win-core-heap-l2-1-0.dll',
++					'api-ms-win-core-libraryloader-l1-2-0.dll',
++					'api-ms-win-core-localization-l1-2-1.dll',
++					'api-ms-win-core-sysinfo-l1-2-1.dll',
++					'api-ms-win-core-synch-l1-2-0.dll',
++					'api-ms-win-core-heap-l1-2-0.dll'
+ 				},
+ 				'excludes': ['Tkconstants', 'Tkinter', 'tcl']
+ 			}
