@@ -39,7 +39,7 @@ index cab911fa..bf6b871f 100755
  				'excludes': ['Tkconstants', 'Tkinter', 'tcl']
  			}
 diff --git a/windows/build_win32.py b/windows/build_win32.py
-index 2f371558..50e4fcae 100644
+index 2f371558..5f48ae8c 100644
 --- a/windows/build_win32.py
 +++ b/windows/build_win32.py
 @@ -67,7 +67,7 @@ os.makedirs(EXE_ROOT)
@@ -47,7 +47,7 @@ index 2f371558..50e4fcae 100644
  
  subprocess.check_call(['python.exe', 'setup.py', 'build'])
 -subprocess.check_call(['python.exe', 'setup.py', 'py2exe', '--dist-dir', EXE_ROOT])
-+subprocess.check_call(['python.exe', 'setup.py', 'py2exe', '--dist-dir', '--debug', EXE_ROOT])
++subprocess.check_call(['python.exe', '-d', 'setup.py', 'py2exe', '--dist-dir', EXE_ROOT])
  
  # Copy GTK runtime
  
